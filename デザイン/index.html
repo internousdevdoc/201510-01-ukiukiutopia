@@ -1,0 +1,126 @@
+﻿<!--HTMLのバージョンを宣言　今回は最新のHTML5を指定-->
+<!DOCTYPE html>
+
+<!--使用言語を宣言　ja＝日本語-->
+<html lang="ja">
+
+<head>
+<!--使用文字コーディングの指定　HTML5からはUTF-8が推奨されている-->
+ <meta charset="UTF-8">
+
+ <!--CSSファイルを読み込ませて色や配置を指定する
+ <link rel="stylesheet(CSSであることを示す)"
+ href="index.css（読み込ませたいCSSファイルの指定）"
+ type="text/css（MIMEタイプというWeb界の拡張子のようなもの　今回はCSSを指定している">-->
+
+ <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/home.css" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--タイトルを付けている　タブに表示され、検索エンジンで重要なキーワードと認識される-->
+ <title>うきうきUtopia HOME</title>
+
+<!--HTML5はIE10以降のみ対応なので、それ以外を使用している方にHTML5を使用していることを通知-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./footerFixed.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+  <!--ヘッダーにロゴを表示-->
+  <header class="header">
+   <div class="logo">
+   <a href="index.html" target="_self "><img src="image/logo.png" alt="うきうきUtopia"></a>
+   </div>
+  </header>
+
+<div class="container">
+
+<div>
+  <!--同じページ内にリンクを作成-->
+  <nav>
+    <ul class="navi"> <!--ul=番号をつけないリスト　class=ラベリング-->
+      <li><a href="#">HOME</a></li> <!--a href=位置のid名を入力してリンクさせる-->
+      <li><a href="#howto">HOW TO</a></li>
+      <li><a href="#access">ACCESS</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="row">
+<!--新規登録画面、ログイン画面へのリンクを表示-->
+ <div class="link">
+   <div class="col-md-4">
+    <div class="createUser">
+    <h3>新規登録の方はこちら</h3>
+    <a class="new" href="createUser.html">新規登録</a>
+    <p class="new-comment">会員登録は無料です！<br>当ジムのシステムを詳しく知りたい方は上にある "HOW TO" をクリックして詳細をご確認ください。</p>
+    </div>
+  </div>
+
+ <div class="col-md-4">
+  <div class="loginUser">
+    <h3>会員様はこちら</h3>
+    <form method="POST" action="">
+    <input type=text name="userID" placeholder="ID">
+    <input type=text name="userPassword" placeholder="パスワード"><br>
+    <input type="button" value=" ログイン " onclick="">
+    <p  class="login-comment">既に会員になられている方はこちらからどうぞ！<br></p>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="oauthUser">
+    <h3>SNSアカウントをご利用される方はこちら</h3>
+<!--SNSを利用したログインボタン-->
+   <a href="twitter" target="_self "><img src="image/TwitterLogoMini.png" alt="twitterアカウントでログイン" class="tw"></a>
+   <a href="fb" target="_self "><img src="image/FB-f-Logo__blue_29.png" alt="facebookアカウントでログイン" class="fb"></a>
+   <a href="google+" target="_self "><img src="image/google+.png" alt="Google+アカウントでログイン" class="gg"></a>
+   <p  class="-comment">ログインはSNSアカウントからも可能です。<br>右側のアイコンをクリックしてください。<br></p>
+  </div>
+</div>
+ <div class="clear">
+ </div>
+</div>
+
+<div id="howto">
+  <h3>当サイトのご利用方法</h3>
+  <p>当サイトにて会員となっていただくと入会費無料でジム施設をご利用いただけます。<br>
+    チケットの詳細は、ログイン後に閲覧可能です。<br>
+    まずは、新規登録をしてみましょう！<br>
+  </p>
+</div>
+
+
+<div id="access">
+<h3>当ジムの住所</h3>
+  <p>
+  〒100-0013 東京都千代田区霞が関３丁目６−１５<br>マップをご覧になりたい方はボタンを押してください。<br>
+  </p>
+  <input type="button" value=" マップを表示 " onclick="">
+</div>
+
+
+<!--フッターを表示-->
+<footer class ="footer">
+
+Copyright © <a href="index.html" target="_self ">うきうきUtopia</a> All Right Reserved.
+
+</footer>
+
+
+
+
+
+
+</div>
+</body>
+
+
+
+
+</html>

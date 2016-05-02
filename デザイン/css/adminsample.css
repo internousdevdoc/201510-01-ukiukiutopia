@@ -1,0 +1,125 @@
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.header{
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.loginName{
+  text-align: right;
+}
+
+.container{
+  width:85%;
+  min-height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  background: #FFF;
+}
+
+ body,html{
+ height: 100%;
+}
+
+.ticketInformation{
+  margin-top: 0px;
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #FFF;
+  background-color: #6495ED;
+  border:5px solid #6495ED;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;縲�
+}
+
+.ticketEdit{
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #FFF;
+  background-color: #6495ED;
+  border:5px solid #6495ED;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;縲�
+}
+
+.userEdit{
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #FFF;
+  background-color: #6495ED;
+  border:5px solid #6495ED;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;縲�
+}
+
+.result{
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  border:5px solid #008000;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;
+  padding: 10px;
+}
+
+table{
+  width: 90%;
+  border-collapse: collapse;
+  border-top: 1px solid #0099CC;
+  border-left: 1px solid #0099CC;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+th,td{
+  white-space: nowrap;
+  border-bottom: 1px solid #0099CC;
+  border-right: 1px solid #0099CC;
+  padding: 3px;
+  text-align: center;
+  width: 20%;
+  background-color: #ADD8E6;
+}
+th{
+  color: #FFFFFF;
+  background: #0099CC;
+}
+
+.button{
+  float: right;
+}
+.clear{
+  clear: both;
+  padding: 5px;
+}

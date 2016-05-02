@@ -1,0 +1,75 @@
+/*HOME画面の背景の色*/
+ body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-family: Arial, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#F38605), to(#2FEF58));　/* Safari,Google Chrome用 */
+  min-height: 100%;
+}
+
+/*headerの高さを指定*/
+.header{
+ height: 75px;
+}
+
+/*トップページのロゴを中央に表示する*/
+.logo{
+ text-align: center;
+ height: 75px;
+}
+
+/*bodyの中を白抜きにする*/
+.container{
+  width:85%;
+  min-height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  background: #FFF
+}
+
+/*body,htmlを画面いっぱいに表示する*/
+ body,html{
+ height: 100%;
+}
+
+
+
+/*footerの色を指定する*/
+.footer{
+  width:85%;
+  margin:0px auto;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;  /*フッターを絶対配置に指定する設定*/
+  bottom:0;
+  text-align:center;
+  background:#000;
+  color:#FFF
+}
+/*TOP画面用ナビゲーションの設定*/
+.navi{
+  margin: 0px;
+ padding: 0;
+ display: table;　/*ナビをtable形式で表示*/
+ text-align: center; /*文字を中央に表示*/
+ width: 100%;　/*contenorと大きさを合わせて表示*/
+}
+.navi li:last-child{
+ border-right: 0;
+}
+.navi li{
+ border-right: 1px solid #fff;
+ display: table-cell;
+ vertical-align: middle;
+}
+/*リストの中身の設定*/
+.navi li a {
+ text-align: center;
+ color: #fff;
+ display: block;
+ font-size: 20px;
+ text-decoration: none;
+ padding: 10px 0;
+}

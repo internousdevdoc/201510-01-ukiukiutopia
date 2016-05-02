@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="com.internousdev.mongoprototype.action" extends="struts-default">
+
+<action name="MongoLoginAction"
+         class="com.internousdev.mongoprototype.action.MongoLoginAction"
+         method="execute">
+         <result name="success">index.jsp</result>
+         <result name="error">Login.jsp</result>
+         <result name="input">Login.jsp</result>
+
+	</action>
+	
+<action name="MongoSelectAction"
+         class="com.internousdev.mongoprototype.action.MongoSelectAction"
+         method="execute">
+         <result name="success">index.jsp</result>
+         <result name="error">index.jsp</result>
+
+	</action>
+	
+
+<action name="MongoDeleteAction"
+         class="com.internousdev.mongoprototype.action.MongoDeleteAction"
+         method="execute">
+         <result name="success">index.jsp</result>
+		 <result name="error">index.jsp</result>
+	</action>
+
+<action name="MongoInsertAction"
+         class="com.internousdev.mongoprototype.action.MongoInsertAction"
+         method="execute">
+         <result name="success">index.jsp</result>
+		 <result name="error">index.jsp</result>
+	</action>
+
+<action name="MongoUpdateAction"
+         class="com.internousdev.mongoprototype.action.MongoUpdateAction"
+         method="execute">
+         <result name="success">index.jsp</result>
+		 <result name="error">index.jsp</result>
+	</action>
+	
+
+</package>
+</struts>

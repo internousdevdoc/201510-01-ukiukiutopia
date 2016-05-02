@@ -1,0 +1,64 @@
+﻿.table-test{
+width: 100%;
+border-collapse: collapse;
+}
+.table-test th{
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #66FF99;
+border: 1px solid #FFD700;
+}
+.table-test td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #66FF99;
+}
+.table-add{
+width: 100%;
+border-collapse: collapse;
+}
+.table-add th{
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #66FF99;
+border: 1px solid #99FF00;
+}
+.table-add td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #66FF99;
+}
+.table-acc{
+width: 100%;
+border-collapse: collapse;
+}
+.table-acc th{
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #66FF99;
+border: 1px solid #99FF00;
+}
+.table-acc td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #66FF99;
+}
+.form-text{
+  text-align: right;
+}
+.table-kingaku{
+  text-align: center;
+}
+.form-titel{
+  text-align: center;
+}
+

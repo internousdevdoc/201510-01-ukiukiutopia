@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+    <!-- 必須入力チェック -->
+        <field name="id">
+        <field-validator type="requiredstring">
+            <message>お名前を入力してください</message>
+        </field-validator>
+    </field>
+     <field name="password">
+        <field-validator type="requiredstring">
+            <message>パスワードを入力してください</message>
+        </field-validator>
+    </field>
+    <!-- ネームチェック -->
+	<field name="id">
+		<field-validator type="regex">
+		<!-- type="regex"はストリングをフィールドをチェックしている -->
+			<param name="regex">^[0-9a-zA-Z]+</param>
+			<message>半角英数字で入力してください</message>
+			<!-- messageタグは画面出力 -->
+		</field-validator>
+	</field>
+	<!-- パスワードチェック -->
+	<field name="password">
+			<field-validator type="regex">
+			<!-- regexは -->
+			<param name="regex">^[0-9a-zA-Z]+</param>
+			<message>半角英数字で入力してください</message>
+		</field-validator>
+	</field>
+</validators>

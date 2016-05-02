@@ -1,0 +1,79 @@
+﻿.p{
+  margin-top: 0;
+}
+
+.form-title{
+  text-align:center;
+}
+.table-test{
+width: 100%;
+border-collapse: collapse;
+}
+.table-test th{
+width: 25%;
+padding: 6px;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #66FF99;
+border: 1px solid #FFD700;
+}
+.table-test td{
+padding: 6px;
+background-color: #fff;
+border: 1px solid #66FF99;
+}
+/*HOME画面の背景の色*/
+ body{
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  color: #666;
+  font-family: Arial, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#F38605), to(#2FEF58));　/* Safari,Google Chrome用 */
+  min-height: 100%;
+}
+
+/*headerの高さを指定*/
+.header{
+ width: 85%;
+ background-color: #000;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 20px;
+}
+.loginName{
+  text-align: right;
+}
+.loginName a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*bodyの中を白抜きにする*/
+.container{
+  width:85%;
+  min-height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  background: #FFF
+}
+
+
+/*body,htmlを画面いっぱいに表示する*/
+ body,html{
+ height: 100%;
+}
+
+/*footerの色を指定する*/
+.footer{
+  width:85%;
+  margin:0px auto;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;  /*フッターを絶対配置に指定する設定*/
+  bottom:0;
+  text-align:center;
+  background:#000;
+  color:#FFF
+}

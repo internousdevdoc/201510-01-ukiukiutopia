@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--使用言語を宣言　ja＝日本語-->
+<html lang="ja">
+
+<head>
+<!--使用文字コーディングの指定　HTML5からはUTF-8が推奨されている-->
+ <meta charset="UTF-8">
+ <!--CSSファイルを読み込ませて色や配置を指定する
+ <link rel="stylesheet(CSSであることを示す)"
+ href="index.css（読み込ませたいCSSファイルの指定）"
+ type="text/css（MIMEタイプというWeb界の拡張子のようなもの　今回はCSSを指定している">-->
+ <link rel="stylesheet" href="css/main.css" type="text/css">
+ <link rel="stylesheet" href="css/createUser.css" type="text/css">
+
+  <title>うきうきUtopia 登録確認画面</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./footerFixed.js"></script>
+  </head>
+  <body>
+
+    <!--ヘッダーにロゴを表示-->
+    <header class="header">
+      <div class="logo">
+      <a href="index.html" target="_self "><img src="image/ukiukiblack2.png" alt="うきうきUtopia"></a>
+      </div>
+    </header>
+
+
+
+    <!--Bodyの位置をラベリング-->
+    <div class="container">
+
+  <!--情報入力のダイアログボックスを作る-->
+  <div class="create">
+    <form method="POST" action="createUserReport.html">
+    <table>
+  <tr><th colspan="3">新規登録</th></tr>
+  <tr>
+   <td>氏名：</td>
+   <td colspan="2"><input type=text name="namae"  placeholder="記入例　御茶ノ水　太郎"></td>
+  </tr>
+  <tr>
+   <td colspan="3">住所の入力をお願いします</td>
+ </tr>
+  <tr>
+    <td> 郵便番号：</td>
+    <td colspan="2"><input type=text name="postCode" placeholder="記入例 1234567">
+      <input type="button" value=" 住所検索 " onclick="">
+    </td>
+  </tr>
+
+  <tr>
+   <td>都道府県：</td>
+   <td colspan="2"><input type=text name="postFirst" placeholder="記入例　東京都"></td>
+  </tr>
+  <tr>
+   <td>市町村区：</td>
+   <td colspan="2"><input type=text name="postSecond" placeholder="記入例　千代田区"></td>
+  </tr>
+  <tr>
+   <td>番地など：</td>
+   <td colspan="2"><input type=text name="postThird" placeholder="記入例　霞ヶ関3-6-15"></td>
+  </tr>
+
+  <tr>
+   <td>メールアドレス：</td>
+   <td colspan="2"><input type=email name="mail1" placeholder="記入例　abcd@efg.com"></td>
+  </tr>
+  <tr>
+   <td>確認のため再入力お願いします：</td>
+   <td colspan="2"><input type=email name="mail2"></td>
+  </tr>
+
+
+
+ <tr>
+  <td colspan="3">クレジットカード情報の入力をお願いします</td>
+</tr>
+<tr>
+  <td>カード会社：</td>
+  <td colspan="2"><input type=text name="cardCo"></td>
+</tr>
+<tr>
+ <td>カード番号：</td>
+ <td colspan="2"><input type=text name="cardNo"></td>
+</tr>
+<tr>
+  <td>有効期限（月）：</td>
+    <td colspan="2">
+      <select name="cardMo">
+        <option value="0">選択してください</option>
+        <option value="1">1月</option>
+        <option value="2">2月</option>
+        <option value="3">3月</option>
+        <option value="4">4月</option>
+        <option value="5">5月</option>
+        <option value="6">6月</option>
+        <option value="7">7月</option>
+        <option value="8">8月</option>
+        <option value="9">9月</option>
+        <option value="10">10月</option>
+        <option value="11">11月</option>
+        <option value="12">12月</option>
+      </select>
+    </td>
+</tr>
+
+<tr>
+    <td>有効期限（年）：</td>
+    <td colspan="2">
+    <select name="cardYe">
+      <option value="0000">選択してください</option>
+      <option value="2015">15年</option>
+      <option value="2016">16年</option>
+      <option value="2017">17年</option>
+      <option value="2018">18年</option>
+      <option value="2019">19年</option>
+      <option value="2020">20年</option>
+      <option value="2021">21年</option>
+      <option value="2022">22年</option>
+    </select>
+  </td>
+</tr>
+<tr>
+ <td>カード名義：</td>
+ <td colspan="2"><input type=text name="cardNamae"></td>
+</tr>
+
+
+  <tr>
+     <td>パスワード：</td>
+     <td colspan="2"><input type=password name="passwd1"></td>
+  </tr>
+  <tr>
+     <td>確認のため再入力お願いします：</td>
+     <td colspan="2"><input type=password name="passwd2"></td>
+  </tr>
+
+    <tr>
+     <td colspan="3">
+      <input type=submit value=" 登録 ">
+      <input type=reset value=" 取消 ">
+     </td>
+    </tr>
+    </table>
+    <!----------------------------------------------------------------->
+
+<input type="hidden" name="Confirm_Page" value="createUserReport.html">
+
+<!----------------------------------------------------------------->
+    </form>
+  </div>
+
+
+
+
+
+
+  <!--フッターを表示-->
+  <footer class ="footer">
+
+  Copyright © <a href="index.html" target="_blank">うきうきUtopia　HOME</a> All Right Reserved.
+
+  </footer>
+  </div>
+</div>
+
+
+
+
+
+  </body>
+
+
+
+
+  </html>

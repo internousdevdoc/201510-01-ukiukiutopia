@@ -1,0 +1,49 @@
+/*HOME画面の背景の色*/
+body{
+width:100%;
+margin:0;
+padding:0;
+color:#666;
+font-family:Arial, sans-serif;
+background:#FFC7AF;
+}
+
+/*bodyの中を白抜きにする*/
+.container{
+  width:80%;
+  margin-left:auto;
+  margin-right: auto;
+  min-height: 100%;  /*最低限の高さに設定＝一番下*/
+/*IE6は対応していないので書く*/
+  height:auto !important;
+  background: #FFF
+}
+/*ブラウザ画面の高さいっぱいを使用する*/
+html,body{
+  height:100%;
+}
+/*隙間をなくす*/
+ul.navi{
+  margin:0px;
+  padding:0%;
+  display:-moz-box;
+  display:-webkit-box;
+  display:-o-box;
+  display:box;
+}
+/*ナビゲーションを横並びにする*/
+ul.navi li{
+  display:inline-block;
+}
+/*footerの色を指定する*/
+.footer{
+  width:80%;
+  margin:0px auto;
+  margin-right: auto;
+  margin-left: auto;
+  position:fixed;  /*フッターを絶対配置に指定する設定*/
+  bottom:0;
+  text-align:center;
+  background:#000;
+  color:#FFF
+}

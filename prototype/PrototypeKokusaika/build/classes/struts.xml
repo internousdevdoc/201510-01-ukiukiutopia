@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 
+	<constant name="struts.devMode" value="false" />
+	 -->
+
+	<constant name="struts.devMode" value="true" />
+    <package name="com.internousdev.ukiukiutopia.action" extends="struts-default">
+
+        <!-- ホーム画面 -->
+        <action name="home" class="com.internousdev.ukiukiutopia.action.HomeAction" method="execute">
+            <result name="success">mypage.jsp</result>
+        </action>
+
+	
+		
+		
+		
+			    <!-- Twitter認証を行うアクション -->
+	
+		<action name="TwitterLogin" class="com.internousdev.ukiukiutopia.action.GoTwitterAction"
+			method="execute">
+           <result name="success">home.jsp</result>
+           <result name="error">home.jsp</result>
+       </action>
+
+		<!-- Twitter認証のコールバックアクション -->
+		<action name="LoginTwitterAction" class="com.internousdev.ukiukiutopia.action.HomeTwitterAction"
+			method="execute">
+			<result name="success">/home.jsp</result>
+			<result name="error">home.jsp</result>
+                </action>
+
+		<!-- ここまでTwitter認証関係 -->
+       
+       <!-- ここからGoogle認証関係 -->
+
+		<!-- Google認証を行うアクション -->
+		<action name="GoGoogleAction"
+			class="com.internousdev.ukiukiutopia.action.GoGoogleAction"
+                method="execute">
+			<result name="success">home.jsp</result>
+			<result name="error">home.jsp</result>
+		</action>
+
+		<!-- Google認証のコールバックアクション -->
+		<action name="LoginGoogleAction"
+			class="com.internousdev.ukiukiutopia.action.LoginGoogleAction"
+                method="execute">
+			<result name="success">home.jsp</result>
+			<result name="error">home.jsp</result>
+		</action>
+
+		<!-- ここまでGoogle認証関係 -->
+		
+				<!-- Facebook認証を行うアクション -->
+
+		<action name="FacebookLogin" class="com.internousdev.ukiukiutopia.facebook.SignInServlet"
+		method="execute">
+		        <result name="success">home.jsp</result>
+			<result name="error">home.jsp</result>
+                </action>
+
+		<!-- Facebook認証のコールバックアクション -->
+		<action name="CallbackServlet" class="com.internousdev.ukiukiutopia.facebook.CallbackServlet"
+		method="execute">
+			<result name="success">home.jsp</result>
+			<result name="error">home.jsp</result>
+		</action>
+
+		<!-- ここまでFacebook認証関係 -->
+       
+		
+
+	</package>
+</struts> 

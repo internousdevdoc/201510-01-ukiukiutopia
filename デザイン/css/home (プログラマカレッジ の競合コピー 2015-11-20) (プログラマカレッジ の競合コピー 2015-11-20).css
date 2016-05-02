@@ -1,0 +1,7 @@
+
+/*新規登録用画像ボタンの大きさ設定*/
+.new{
+   max-width: 300px;
+   height: auto;
+   -ms-interpolation-mode: bicubic;
+}

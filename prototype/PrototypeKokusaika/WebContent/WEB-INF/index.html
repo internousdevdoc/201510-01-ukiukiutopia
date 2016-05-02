@@ -1,0 +1,105 @@
+﻿<!--HTMLのバージョンを宣言　今回は最新のHTML5を指定-->
+<!DOCTYPE html>
+
+<!--使用言語を宣言　ja＝日本語-->
+<html lang="ja">
+
+<head>
+<!--使用文字コーディングの指定　HTML5からはUTF-8が推奨されている-->
+ <meta charset="UTF-8">
+
+ <!--CSSファイルを読み込ませて色や配置を指定する
+ <link rel="stylesheet(CSSであることを示す)"
+ href="index.css（読み込ませたいCSSファイルの指定）"
+ type="text/css（MIMEタイプというWeb界の拡張子のようなもの　今回はCSSを指定している">-->
+
+ <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/home.css" type="text/css">
+
+<!--タイトルを付けている　タブに表示され、検索エンジンで重要なキーワードと認識される-->
+ <title>うきうきUtopia HOME</title>
+
+<!--HTML5はIE10以降のみ対応なので、それ以外を使用している方にHTML5を使用していることを通知-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./footerFixed.js"></script>
+</head>
+
+
+<body>
+
+  <!--ヘッダーにロゴを表示-->
+  <header class="header">
+   <div class="logo">
+   <a href="index.html" target="_self "><img src="image/ukiukiblack2.png" alt="うきうきUtopia"></a>
+   </div>
+  </header>
+
+<div class="container">
+
+<div>
+  <!--同じページ内にリンクを作成-->
+  <nav>
+    <ul class="navi"> <!--ul=番号をつけないリスト　class=ラベリング-->
+      <li><a href="#">HOME</a></li> <!--a href=位置のid名を入力してリンクさせる-->
+      <li><a href="#howto">HOW TO</a></li>
+      <li><a href="#access">ACCESS</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!--新規登録画面、ログイン画面へのリンクを表示-->
+<div>
+  <table class="link">
+    <tr>
+  <td><a class="new" href="createUser.html">新規登録</a></td>
+  <td><p class="new-comment">会員登録は無料です！<br>当ジムのシステムを詳しく知りたい方は<br>上にある HOW TO をクリックして詳細をご確認ください。</p><td>
+  <td></td>
+</tr>
+<tr>
+  <td><a class="login" href="ページのURL">ログイン</a></td>
+　<td><p  class="login-comment">既に会員になられている方はこちらからどうぞ！<br>ログインはSNSアカウントからも可能です。<br>右側のアイコンをご利用ください。<br></p></td>
+<!--SNSを利用したログインボタン-->
+<td>
+ <a href="twitter" target="_self "><img src="image/TwitterLogo.png" alt="twitterアカウントでログイン" class="tw"></a>
+ <a href="fb" target="_self "><img src="image/FB-f-Logo__blue_29.png" alt="facebookアカウントでログイン" class="fb"></a>
+ <a href="google+" target="_self "><img src="image/google+.png" alt="Google+アカウントでログイン" class="gg"></a>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="howto">
+  <h3>当サイトのご利用方法</h3>
+  <p>当サイトにて会員となっていただくと入会費無料でジム施設をご利用いただけます。<br>
+    チケットの詳細は、ログイン後に閲覧可能です。<br>
+    まずは、新規登録をしてみましょう！<br>
+  </p>
+</div>
+
+
+<div id="access">
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2070317330144!2d139.74358841468597!3d35.671903938092036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b8eebcf1a19%3A0xa6b37f0d62391d8!2z44CSMTAwLTAwMTMg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy66Zye44GM6Zai77yT5LiB55uu77yW4oiS77yR77yV!5e0!3m2!1sja!2sjp!4v1446360959882" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+<!--フッターを表示-->
+<footer class ="footer">
+
+Copyright © <a href="index.html" target="_self ">うきうきUtopia</a> All Right Reserved.
+
+</footer>
+
+
+
+
+
+
+</div>
+</body>
+
+
+
+
+</html>

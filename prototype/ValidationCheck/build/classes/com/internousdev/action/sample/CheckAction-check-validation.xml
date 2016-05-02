@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+  "-//Apache Struts//XWork Validator 1.0.3//EN"
+  "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+    <!-- １．名前フィールドの必須入力チェック -->
+    <field name="name">
+        <field-validator type="requiredstring">
+            <message>名前を入力してください</message>
+        </field-validator>
+    </field>
+
+    <!-- ２．メールアドレス入力の有効性判断 -->
+    <field name="email">
+        <field-validator type="email">
+            <message>有効なメールアドレスを入力してください</message>
+        </field-validator>
+    </field>
+
+    <!-- ３．年齢の範囲チェック -->
+    <field name="age">
+        <field-validator type="int">
+            <param name="min">18</param>
+            <param name="max">99</param>
+            <message>${min}歳以上（${max}歳以下）の方が対象です。（入力値：${age}歳）</message>
+        </field-validator>
+    </field>
+
+</validators>

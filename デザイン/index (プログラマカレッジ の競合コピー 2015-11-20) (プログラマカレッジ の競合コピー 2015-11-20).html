@@ -1,0 +1,72 @@
+<!--HTMLのバージョンを宣言　今回は最新のHTML5を指定-->
+<!DOCTYPE html>
+<!--使用言語を宣言　ja＝日本語-->
+<html lang="ja">
+
+<head>
+<!--使用文字コーディングの指定　HTML5からはUTF-8が推奨されている-->
+ <meta charset="UTF-8">
+ <!--CSSファイルを読み込ませて色や配置を指定する
+ <link rel="stylesheet(CSSであることを示す)"
+ href="index.css（読み込ませたいCSSファイルの指定）"
+ type="text/css（MIMEタイプというWeb界の拡張子のようなもの　今回はCSSを指定している">-->
+ <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/home.css" type="text/css">
+<!--タブに表示され、検索エンジンで重要なキーワードと認識される-->
+ <title>うきうきUtopia HOME</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./footerFixed.js"></script>
+</head>
+
+<body>
+  <!--Bodyの位置をラベリング-->
+  <div class="container">
+  <!--ヘッダーにロゴを表示-->
+  <header class="header">
+   <img src="image/logo-ukiuki.png" alt="うきうき" width="140" height="50">
+   <img src="image/logo-Utopia.png" alt="Utopia" width="242" height="73">
+  <!--　後からリンクにする
+  <a href =新規登録画面のファイル名">
+    <a href ="ログイン画面のファイル名">
+    -->
+  </header>
+
+
+<div>
+  <!--同じページ内にリンクを作成-->
+  <nav>
+    <ul class="navi"> <!--ul=番号をつけないリスト　id=位置のラベリング-->
+      <li><a href="#navi">HOME</a></li> <!--a href=位置のid名を入力してリンクさせる-->
+      <li><a href="#new">新規登録</a></li>
+      <li><a href="#login">ログイン</a></li>
+      <li><a href="#access">アクセス</a></li>
+       <div class="c-both"></div> <!--空のDIVをかましてCSSのフロートをクリア-->
+    </ul>
+  </nav>
+</div>
+
+<div>
+  <a href="ページのURL"><img class="new" src="image/gym_image.jpg" alt="新規登録"></a>
+  <a href="ページのURL"><img src="画像のURL" alt="ログイン"></a>
+</div>
+<!--フッターを表示-->
+<footer class ="footer">
+
+Copyright © <a href="index.html" target="_blank">うきうきUtopia　HOME</a> All Right Reserved.
+
+</footer>
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

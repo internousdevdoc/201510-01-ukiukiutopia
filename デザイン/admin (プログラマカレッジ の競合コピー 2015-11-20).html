@@ -1,0 +1,128 @@
+<!--HTMLのバージョンを宣言　今回は最新のHTML5を指定-->
+<!DOCTYPE html>
+
+<!--使用言語を宣言　ja＝日本語-->
+<html lang="ja">
+
+<head>
+<!--使用文字コーディングの指定　HTML5からはUTF-8が推奨されている-->
+ <meta charset="UTF-8">
+
+ <!--CSSファイルを読み込ませて色や配置を指定する
+ <link rel="stylesheet(CSSであることを示す)"
+ href="index.css（読み込ませたいCSSファイルの指定）"
+ type="text/css（MIMEタイプというWeb界の拡張子のようなもの　今回はCSSを指定している">-->
+
+ <link rel="stylesheet" href="css/adminHome.css" type="text/css">
+  <link rel="stylesheet" href="css/admin.css" type="text/css">
+
+<!--タイトルを付けている　タブに表示され、検索エンジンで重要なキーワードと認識される-->
+ <title>うきうきUtopia HOME</title>
+
+<!--HTML5はIE10以降のみ対応なので、それ以外を使用している方にHTML5を使用していることを通知-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script type="text/javascript" src="./footerFixed.js"></script>
+</head>
+
+
+<body>
+
+  <!--ヘッダーにロゴを表示-->
+  <header class="header">
+   <a href="index.html" target="_self "><img class="logo" src="image/ukiukiblack2.png" alt="うきうきUtopia"></a>
+  <div class="loginName">
+   <!--後ほどログイン者名が表示されるようにする↓-->
+   <a href="admin-login.html" target="_self">管理者名[ログアウト]</a>
+ </div>
+  </header>
+
+<div class="container">
+
+<br>
+
+<!--情報入力のダイアログボックスを作る-->
+<div class="admin">
+  <form method="POST" action="admin.html">
+  <div class="ticketInformation">
+      チケット購入情報確認
+      <input type="date"(H5d) name="sdate"> ～ <input type="date"(H5d) name="edate">
+        <select name="ticketKind">
+          <option value="0">選択してください</option>
+          <option value="1">マシン利用チケット</option>
+          <option value="2">プール利用チケット</option>
+          <option value="3">お風呂利用チケット</option>
+          <option value="4">フルセット利用チケット</option>
+        </select>
+    <input type="button" value=" 出力 " onclick="">
+  </div>
+
+  <div class="ticketEdit">
+      チケット情報編集
+      <input type="text" name="ticketname" placeholder="チケット名">
+      <input type="text" name="option" placeholder="オプション">
+      <input type="text" name="ticketcost" placeholder="チケット料金">円
+      <input type="button" value=" 追加 " onclick=""> <input type="button" value=" 削除 " onclick=""> <input type="button" value=" 全表示 " onclick="">
+  </div>
+
+  <div class="userEdit">
+      ユーザー情報編集
+      <input type="text" name="username" placeholder="ユーザー名">
+      <input type="text" name="userid" placeholder="ユーザーID">
+      <input type="tel" name="usertel" placeholder="電話番号">
+      <input type="button" value=" 検索 " onclick="">
+</div>
+
+<div class="result">
+    <h5>結果表示スペース</h5>
+    <p>チケット購入情報確認<br>2015年11月1日～11月30日　チケット名　販売数　－－枚<br></p>
+    <p>チケット情報編集<br>チケット名　値段　ーー円　を追加（もしくは削除）しました。<br></p>
+   <p>チケット情報一覧</p>
+   <table>
+    <tr>
+      <th>種別</th>
+      <th>チケット名</th>
+      <th>金額</th>
+    </tr>
+    <tr>
+     <td>利用券</td>
+     <td>マシン利用チケット</td>
+     <td>700</td>
+    </tr>
+    <tr>
+     <td>利用券</td>
+     <td>プール利用チケット</td>
+     <td>700</td>
+    </tr>
+    <tr>
+     <td>利用券</td>
+     <td>お風呂利用チケット</td>
+     <td>700</td>
+    </tr>
+    <tr>
+     <td>利用券</td>
+     <td>フルセット利用チケット</td>
+     <td>1,600</td>
+    </tr>
+    <tr>
+     <td>オプション</td>
+     <td>グッズレンタル</td>
+     <td>500</td>
+    </tr>
+    <tr>
+     <td>オプション</td>
+     <td>パーソナルトレーナー</td>
+     <td>5,000</td>
+    </tr>
+   </table>
+ </div>
+</div>
+
+</div>
+</body>
+
+
+
+
+</html>

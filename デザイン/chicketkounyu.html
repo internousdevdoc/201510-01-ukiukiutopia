@@ -1,0 +1,152 @@
+<head>
+    <meta charset="utf-8">
+    <title>chicketkounyu</title>
+
+    <link rel="stylesheet" type="text/css" href="mypage.css" media="all">
+    <link rel="stylesheet" type="text/css" href="chiket-kounyuu.css" media="all">
+</head>
+<body>
+  <header class="header">
+     <a href="index.html" target="_self "><img class="logo" src="ukiukiblack2.png" alt="うきうきUtopia"></a>
+    <div class="loginName">
+     <a href="" target="_self">会員名[ログアウト]</a>
+   </div>
+    </header>
+  <!--Bodyの位置をラベリング-->
+  <div class="container">
+<!--ヘッダーにロゴを表示-->
+  <table class="table-test">
+    <tr><th><div class="form-titel">チケット購入画面</div></th></tr>
+    <tr><th colspan="3">施設利用権</th></tr>
+    <tr>
+     <td>
+       <div class="table-bar">
+       <div style="text-align:left;float:left;"><input type="checkbox" value="1">フルセット:<input type="number" value="0" min="0" max="99">枚</div>
+       <div style="text-align:right;"><input type="text" value="">円</div>
+     </div>
+       <p>説明:</p>
+     </td>
+   </tr>
+
+   <tr>
+     <td>
+       <div class="table-bar">
+       <div style="text-align:left;float:left;"><input type="checkbox" value="2">マシン利用チケット:<input type="number" value="0" min="0" max="99">枚</div>
+       <div style="text-align:right;"><input type="text" value="">円</div>
+       <p>説明:</p>
+     </td>
+   </tr>
+
+   <tr>
+     <td>
+       <div class="table-bar">
+       <div style="text-align:left;float:left;"><input type="checkbox" value="3">プール利用チケット:<input type="number" value="0" min="0" max="99">枚</div>
+       <div style="text-align:right;"><input type="text" value="">円</div>
+       <p>説明:</p>
+     </td>
+   </tr>
+
+   <tr>
+     <td>
+       <div class="table-bar">
+       <div style="text-align:left;float:left;"><input type="checkbox" value="4">風呂利用チケット:<input type="number" value="0" min="0" max="99">枚</div>
+       <div style="text-align:right;"><input type="text" value="">円</div>
+       <p>説明:</p>
+     </td>
+  </tr>
+
+  </table>
+
+  <table class="table-add">
+    <tr><th colspan="3">オプション</th></tr>
+     <tr>
+       <td>
+         <div class="table-bar">
+         <div style="text-align:left;float:left;">レンタル:<input type="number" value="0" min="0" max="99">枚</div>
+         <div style="text-align:right;"><input type="text" value="">円</div>
+       <p>説明:</p>
+       <form><input type="checkbox" value="1">使用しない</form>
+     </td>
+   </tr>
+
+   <tr>
+     <td>
+       <div style="text-align:left;float:left;">パーソナルトレーナー:<input type="number" value="0" min="0" max="99">枚</div>
+       <div style="text-align:right;"><input type="text" value="">円</div>
+      <p>説明:</p>
+      <form><input type="checkbox" value="1">付けない</form>
+   </td>
+ </tr>
+   </table>
+
+  <table class="table-acc">
+    <tr><th colspan="3">合計金額</th></tr>
+     <tr>
+       <td><input type="checkbox" value="1">店頭払い
+         <p></p>
+         <form><input type="checkbox" value="1">クレジットカード払い</td></form>
+      <td><div class="form-text">合計<input type="text" value="">円</div></td>
+   </tr>
+
+   <tr>
+     <td colspan="3">クレジットカード情報の入力をお願いします</td>
+   </tr>
+
+   <tr>
+     <td>カード番号：</td>
+     <td colspan="2"><input type=text name="cardNo"></td>
+   </tr>
+   <tr>
+     <td>有効期限（月）：</td>
+     <td colspan="2">
+      <select name="cardMo">
+        <option value="0">選択してください</option>
+        <option value="1">1月</option>
+        <option value="2">2月</option>
+        <option value="3">3月</option>
+        <option value="4">4月</option>
+        <option value="5">5月</option>
+        <option value="6">6月</option>
+        <option value="7">7月</option>
+        <option value="8">8月</option>
+        <option value="9">9月</option>
+        <option value="10">10月</option>
+        <option value="11">11月</option>
+        <option value="12">12月</option>
+      </select>
+    </td>
+</tr>
+
+<tr>
+    <td>有効期限（年）：</td>
+    <td colspan="2">
+    <select name="cardYe">
+      <option value="0000">選択してください</option>
+      <option value="2015">15年</option>
+      <option value="2016">16年</option>
+      <option value="2017">17年</option>
+      <option value="2018">18年</option>
+      <option value="2019">19年</option>
+      <option value="2020">20年</option>
+      <option value="2021">21年</option>
+      <option value="2022">22年</option>
+    </select>
+  </td>
+</tr>
+
+<tr>
+  <td>セキュリティコード：</td>
+  <td colspan="2"><input type=text name="cardCo"></td>
+</tr>
+
+   <td colspan="3">
+     <div class="table-kingaku"><a href="chicketkanryou.html"><input type="submit" value="購入"></a>
+       <a href="mypage.html"><input type="submit" value="キャンセル"></a></div>
+     </td>
+   </table>
+
+     <div>
+       <footer class="footer">Copyright © <a href="index.html" target="_blank">うきうきUtopia　HOME</a> All Right Reserved.</footer>
+     </div>
+
+ </body>

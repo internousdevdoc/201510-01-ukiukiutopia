@@ -1,0 +1,140 @@
+/*HOME画面の背景の色*/
+ body{
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+  color: #666;
+  font-family: Arial, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#F38605), to(#2FEF58));　/* Safari,Google Chrome用 */
+  min-height: 100%;
+}
+
+/*headerの高さを指定*/
+.header{
+ width: 85%;
+ background-color: #000;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 20px;
+}
+.loginName{
+  text-align: right;
+}
+.loginName a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*bodyの中を白抜きにする*/
+.container{
+  width:85%;
+  min-height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  background: #FFF
+}
+
+
+/*body,htmlを画面いっぱいに表示する*/
+ body,html{
+ height: 100%;
+}
+
+
+/*チケット購入情報確認のスペース*/
+.ticketInformation{
+  margin-top: 0px;
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #FFF;
+  background-color: #6495ED;
+  border:5px solid #6495ED;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;　
+}
+
+/*チケット情報編集のスペース*/
+.ticketEdit{
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #FFF;
+  background-color: #6495ED;
+  border:5px solid #6495ED;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;　
+}
+
+/*ユーザー情報編集のスペース*/
+.userEdit{
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color: #FFF;
+  background-color: #6495ED;
+  border:5px solid #6495ED;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;　
+}
+
+/*結果表示スペース*/
+.result{
+  display:block;
+  width:80%;
+  height:auto;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  border:5px solid #008000;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius:5px;
+  padding: 10px;
+}
+
+table{
+  width: 90%;
+  border-collapse: collapse;
+  border-top: 1px solid #0099CC;
+  border-left: 1px solid #0099CC;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+th,td{
+  white-space: nowrap;
+  border-bottom: 1px solid #0099CC;
+  border-right: 1px solid #0099CC;
+  padding: 3px;
+  text-align: center;
+  width: 20%;
+  background-color: #ADD8E6;
+}
+th{
+  color: #FFFFFF;
+  background: #0099CC;
+}
+
+.button{
+  float: right;
+}
+.clear{
+  clear: both;
+  padding: 5px;
+}

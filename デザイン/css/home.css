@@ -1,0 +1,142 @@
+﻿/*TOP画面用ナビゲーションの設定*/
+.navi{
+ padding: 0;
+ margin: 0;
+ background-color: #FFA07A;
+ display: table;　/*ナビをtable形式で表示*/
+ text-align: center; /*文字を中央に表示*/
+ width: 100%;　/*contenorと大きさを合わせて表示*/
+}
+/*セルの右側にボーダーを表示させる*/
+.navi li{
+ border-right: 1px solid #fff;
+ display: table-cell;
+ vertical-align: middle;
+}
+/*最後のボーダーを消すらしいが利いてない*/
+.navi li:last-child{
+ border-right: 0;
+}
+/*リストの中身の設定*/
+.navi li a {
+ text-align: center;
+ color: #fff;
+ display: block;
+ font-size: 40px;
+ text-decoration: none;
+ padding: 10px;
+}
+
+.link div{
+  display: block;
+}
+
+/*新規登録・ログインのボタン*/
+.createUser{
+  height:auto;
+  font-weight:bold;
+  border:5px solid #008000;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius:5px;
+  padding: 5px;
+}
+.loginUser{
+  height:auto;
+  font-weight:bold;
+  border:5px solid #008000;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius:5px;
+  padding: 5px;　
+}
+.oauthUser{
+  height:auto;
+  font-weight:bold;
+  border:5px solid #008000;
+  margin-top: 10px;
+  margin-left: 8px;
+  border-radius:5px;
+  padding: 5px;
+}
+
+.button{
+  text-align: center;
+}
+
+
+/*新規登録ボタン*/
+.new{
+  width:180px;
+  color:#ffffff;
+  background:#F38605;
+  font-size:28px;
+  font-weight:bold;
+  text-align:center;
+  display:block;
+  text-decoration:none;
+  border:1px solid #D2691E;　
+  padding:12px 0 8px 0;
+  border-radius:5px;　
+  }
+
+/*カーソルが上に来た際の色変化*/
+a.new:hover {
+  background: #FFD700;
+}
+
+
+/*ログインボタン*/
+.login{
+  width:180px;
+  color:#ffffff;
+  background:#32CD32;
+  font-size:28px;
+  font-weight:bold;
+  text-align:center;
+  display:block;
+  text-decoration:none;
+  border:1px solid #228B22;　
+  padding:12px 0 8px 0;
+  border-radius:5px;　
+  }
+
+/*カーソルが上に来た際の色変化*/
+a.login:hover {
+  background:#ADFF2F;
+}
+
+/*SNSアイコンの大きさ設定*/
+img.tw{
+  width: 50px;
+  height: auto;
+}
+img.fb{
+  width: 50px;
+  height: auto;
+}
+img.gg{
+  width: 50px;
+  height: auto;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.howto{
+  display: block;
+}
+
+#howto{
+  display: block;
+
+}
+
+/*埋め込んだGoogleマップの大きさを指定*/
+ .map{
+ width: 300px;
+ height: 300px;
+ margin: 50px;
+}
